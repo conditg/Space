@@ -1,4 +1,9 @@
 import cesium.featurize as featurize
+
+#store a list of all the features we want to use in our models. 
+#options here: http://cesium-ml.org/docs/feature_table.html
+
+
 features_to_use = ["all_times_nhist_numpeaks",
                    "amplitude",
                    "percent_beyond_1_std",
@@ -16,6 +21,8 @@ features_to_use = ["all_times_nhist_numpeaks",
                    "skew",
                    "std",
                    "weighted_average"]
+
+#create a function that transforms a TimeSeries() object into a row of data with features we chose
 
 def worker(tsobj):
     global features_to_use
