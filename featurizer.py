@@ -25,6 +25,8 @@ features_to_use = ["all_times_nhist_numpeaks",
 #With a list of the starting positions by object (len = 3.5M)
 positions = [1,12076,24634,...]
 
+#store pb names for labelling the features accurately
+pbnames=['u', 'g', 'r', 'i', 'z', 'Y']
 
 #loop through each object
 for i in len(positions):
@@ -57,5 +59,3 @@ for i in len(positions):
 
 
 
-
-pbnames=['u', 'g', 'r', 'i', 'z', 'Y']
